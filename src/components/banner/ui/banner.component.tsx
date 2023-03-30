@@ -7,11 +7,11 @@ import CloseIcon from "@mui/icons-material/Close";
 import { ItemVideoYoutubeBannerComponent } from "./itemVideoYoutubeBanner.component";
 import { itemVideoModel } from "../model";
 import { ItemVideoType } from "../types";
-import img1 from "../../../assets/banner/1.png";
-import img2 from "../../../assets/banner/1-1.png";
-import img3 from "../../../assets/banner/2.png";
-import img4 from "../../../assets/banner/3.png";
-import img5 from "../../../assets/banner/4.png";
+import img1 from "../../../assets/logo/1.png";
+import img2 from "../../../assets/logo/2.png";
+import img3 from "../../../assets/logo/3.png";
+import img4 from "../../../assets/logo/4.png";
+import img5 from "../../../assets/logo/5.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
@@ -67,37 +67,26 @@ export const BannerComponent: FC = () => {
             МЫ ПРИДУМЫВАЕМ И ПРОИЗВОДИМ ВИДЕОРОЛИКИ САМОГО РАЗНОГО СТИЛЯ И
             НАПРАВЛЕНИЙ
           </h1>
-          <div className="flex items-center flex-col justify-center sm:w-[100%] w-[70%]">
-            <h1 className="sm:text-[10px] uppercase text-[#020202] text-[15px] font-normal jobT">
-              Работаем в Таджикистане
-            </h1>
-            <span className="sm:text-[10px] text-[#fff] text-sm ml-[78px] mt-[7px]">
-              уникальный сценарий в подарок!
-            </span>
-          </div>
-          <div className="sm:text-[10px] absolute left-[20px] bottom-[160px] caption">
-            Нам <br />
-            доверяют
-          </div>
-          <div className="hidden sm:flex items-center flex-col">
+          <div className="hidden sm:block">
+            <div className="sm:text-[10px]">Нам доверяют</div>
             <img className="w-[100%]" src={img1} alt="Logo" />
-            <img className="w-[100%]" src={img2} alt="Logo" />
           </div>
+          <div className="sm:hidden sm:text-[10px]">Нам доверяют</div>
           <Swiper className="w-[80%] xl:w-[100%]" slidesPerView={2}>
             <SwiperSlide>
-              <img className="w-[100%] h-[90px]" src={img1} alt="Logo" />
+              <img className="w-[100%]" src={img1} alt="Logo" />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="w-[100%] h-[90px] " src={img2} alt="Logo" />
+              <img className="w-[100%]  " src={img2} alt="Logo" />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="w-[100%] h-[90px] " src={img3} alt="Logo" />
+              <img className="w-[100%] " src={img3} alt="Logo" />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="w-[100%] h-[90px] " src={img4} alt="Logo" />
+              <img className="w-[100%] " src={img4} alt="Logo" />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="w-[100%] h-[90px] " src={img5} alt="Logo" />
+              <img className="w-[100%] " src={img5} alt="Logo" />
             </SwiperSlide>
           </Swiper>
         </div>
