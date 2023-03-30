@@ -28,7 +28,7 @@ export const BannerComponent: FC = () => {
           muted
         />
         <div className="s:px-[20px] s:py-[25px] w-[100%] h-screen bgBanner absolute top-0 left-0 right-0 bottom-0 xl:px-[50px] py-[45px]  px-[80px] flex items-start justify-between flex-col">
-          <div className="2xl:hidden absolute right-0 bottom-0">
+          <div className="xl:hidden absolute right-0 bottom-0">
             {itemVideoModel.map((item: ItemVideoType) => (
               <ItemVideoYoutubeBannerComponent key={item.srcVideo} {...item} />
             ))}
@@ -85,19 +85,19 @@ export const BannerComponent: FC = () => {
           </div>
           <Swiper className="w-[80%] xl:w-[100%]" slidesPerView={2}>
             <SwiperSlide>
-              <img className="w-[100%]" src={img1} alt="Logo" />
+              <img className="w-[100%] h-[90px]" src={img1} alt="Logo" />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="w-[100%]" src={img2} alt="Logo" />
+              <img className="w-[100%] h-[90px] " src={img2} alt="Logo" />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="w-[100%]" src={img3} alt="Logo" />
+              <img className="w-[100%] h-[90px] " src={img3} alt="Logo" />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="w-[100%]" src={img4} alt="Logo" />
+              <img className="w-[100%] h-[90px] " src={img4} alt="Logo" />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="w-[100%]" src={img5} alt="Logo" />
+              <img className="w-[100%] h-[90px] " src={img5} alt="Logo" />
             </SwiperSlide>
           </Swiper>
         </div>
