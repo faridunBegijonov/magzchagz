@@ -1,5 +1,9 @@
 import React from "react";
-import { BannerComponent, SidebarComponent } from "./components";
+import {
+  BannerComponent,
+  SidebarComponent,
+  AboutComponent,
+} from "./components";
 
 function App() {
   return (
@@ -7,6 +11,7 @@ function App() {
       <SidebarComponent />
       <div className="pl-[250px] xl:pl-0 w-[100%]">
         <BannerComponent />
+        <AboutComponent />
       </div>
     </>
   );

@@ -63,7 +63,7 @@ export const BannerComponent: FC = () => {
               )}
             </div>
           </div>
-          <h1 className="s:text-[20px] sm:text-[25px] lg:w-[100%] xl:text-[40px] xl:w-[850px] text-[50px] leading-snug	 text-[#fff] font-[900] w-[950px]">
+          <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] text-[50px] leading-snug	 text-[#fff] font-[900] w-[950px]">
             МЫ ПРИДУМЫВАЕМ И ПРОИЗВОДИМ ВИДЕОРОЛИКИ САМОГО РАЗНОГО СТИЛЯ И
             НАПРАВЛЕНИЙ
           </h1>
