@@ -40,7 +40,7 @@ export const ItemVideoYoutubeBannerComponent: FC<ItemVideoType> = ({
           >
             <div
               onClick={handlerModal}
-              className="absolute right-10 cursor-pointer top-1 text-[#fff] text-[85px] rotate-45"
+              className="sm:hidden absolute right-10 cursor-pointer top-1 text-[#fff] text-[65px] rotate-45"
             >
               +
             </div>

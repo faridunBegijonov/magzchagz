@@ -3,6 +3,9 @@ import logo from "../../assets/about/Logo.png";
 import img from "../../assets/about/logomagz 1.png";
 import img2 from "../../assets/about/Magz.png";
 import about2Img from "../../assets/about/о нас4.png";
+import about2imgItem from "../../assets/about/о насItem1.png";
+import about3imgItem from "../../assets/about/о насItem2.png";
+import about4imgItem from "../../assets/about/о насItem4.png";
 import { aboutModel, aboutModel2, IAboutModel } from "./about.model";
 
 export const AboutComponent: React.FC = () => {
@@ -37,7 +40,7 @@ export const AboutComponent: React.FC = () => {
       <div className="max-[920px]:mt-[100px] lg:mt-[120px] mt-[300px]">
         <h2 className="sm:text-[16px] 3xl:w-[100%] w-[60%] mx-auto mt-8 max-[920px]:text-[28px] max-[920px]:mt-[20px] lg:text-[34px] lg:mt-[50px] text-center text-[44px] text-[white]">
           <span className="text-[#02FFFD]">
-            MAGHZ - THINKING, FILMING, MAKING.
+            MAGZ - THINKING, FILMING, MAKING.
           </span>{" "}
           <br />
           МЫ ЛЮБИМ СОЗДАВАТЬ НОВЫЙ МИР, ГДЕ СТАНОВЯТСЯ РЕАЛЬНОСТЬЮ ЛЮБЫЕ ИДЕИ.
@@ -114,7 +117,7 @@ export const AboutComponent: React.FC = () => {
         </div>
       </div>
       <div
-        className="2xl:mt-[100px] xl:mt-[80px] mt-[160px] sm:hidden 3xl:w-full w-[80%] mx-auto
+        className="2xl:mt-[100px] xl:mt-[80px] mt-[160px] 3xl:w-full w-[80%] mx-auto
       "
       >
         <h1 className="sm:text-[24px] 2xl:text-[34px] text-[44px] text-[white] text-center">
@@ -122,12 +125,24 @@ export const AboutComponent: React.FC = () => {
         </h1>
         <img
           src={about2Img}
-          className="2xl:mt-[100px] xl:mt-[80px] lg:mt-[50px] w-full mx-auto"
+          className="2xl:mt-[100px] sm:hidden xl:mt-[80px] lg:mt-[50px] w-full mx-auto"
+        />
+        <img
+          src={about2imgItem}
+          className="sm:block hidden xl:mt-[80px] lg:mt-[50px] w-full mx-auto"
+        />
+        <img
+          src={about3imgItem}
+          className="sm:block hidden xl:mt-[80px] lg:mt-[50px] w-full mx-auto"
+        />
+        <img
+          src={about4imgItem}
+          className="sm:block hidden xl:mt-[80px] lg:mt-[50px] w-full mx-auto"
         />
       </div>
       <a
         href="#our-works"
-        className="sm:text-[24px] text-center inline-block	flex justify-center transition-colors hover:text-[#8DA399FF] lg:text-[34px] text-center text-[44px] text-[white] mt-[24px] font-bold"
+        className="sm:text-[24px] sm:mt-[80px] text-center inline-block	flex justify-center transition-colors hover:text-[#8DA399FF] lg:text-[34px] text-center text-[44px] text-[white] mt-[24px] font-bold"
       >
         ДАВАЙТЕ ТВОРИТЬ С НАМИ!
       </a>

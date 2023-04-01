@@ -51,7 +51,10 @@ export const BannerComponent: FC = () => {
             </a>
             <div
               onClick={() => setMenu(!menu)}
-              className="xl:flex cursor-pointer hidden w-[70px] h-[70px] items-center justify-center  "
+              className={`xl:flex cursor-pointer hidden w-[70px] h-[70px] items-center justify-center ${
+                menu &&
+                "fixed sm:right-[22px] sm:top-[22px] z-[102] right-[45px] top-[45px]"
+              }`}
             >
               {menu ? (
                 <CloseIcon
@@ -67,11 +70,7 @@ export const BannerComponent: FC = () => {
             МЫ ПРИДУМЫВАЕМ И ПРОИЗВОДИМ ВИДЕОРОЛИКИ САМОГО РАЗНОГО СТИЛЯ И
             НАПРАВЛЕНИЙ
           </h1>
-          <div className="hidden sm:block">
-            <div className="sm:text-[10px]">Нам доверяют</div>
-            <img className="w-[100%]" src={img1} alt="Logo" />
-          </div>
-          <div className="sm:hidden sm:text-[10px]">Нам доверяют</div>
+          <div className="sm:text-[10px]">Нам доверяют</div>
           <Swiper className="w-[80%] xl:w-[100%]" slidesPerView={2}>
             <SwiperSlide>
               <img className="w-[100%]" src={img1} alt="Logo" />
