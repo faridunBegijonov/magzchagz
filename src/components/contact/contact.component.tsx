@@ -13,7 +13,7 @@ export const ContactComponent: React.FC = () => {
             Таджикистан г. Душанбе
           </h1>
           <p className="xl:text-[28px] sm:text-[24px] text-[38px]">
-            ул. Зафар, 174 734025
+            Sooroosh Hall
           </p>
           <div className="flex items-center justify-between sm:h-[400px] justify-start items-start sm:flex-col w-[100%] flex-wrap mt-[38px]">
             <a
@@ -36,7 +36,7 @@ export const ContactComponent: React.FC = () => {
                     target="_blank"
                     className="3xl:text-[20px] underline hover:no-underline mt-[4px] text-[25px] text-[#41ADF0FF]"
                   >
-                    Tj production
+                    Magzchagz Production
                   </a>
                 </div>
               </div>
