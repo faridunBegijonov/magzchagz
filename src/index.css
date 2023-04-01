@@ -72,3 +72,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.gridProject {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.blockProject:hover img {
+  transform: scale(1.2);
+}
+
+.blockProject:hover div {
+  opacity: 1;
+}

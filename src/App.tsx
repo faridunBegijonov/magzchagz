@@ -7,6 +7,7 @@ import {
 } from "./components";
 import { itemVideoModel } from "./components/banner/model";
 import { ContactComponent } from "./components/contact/contact.component";
+import { OurWorksComponent } from "./components/ourWorks/ourWorks.component";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             );
           })}
         </div>
+        <OurWorksComponent />
         <AboutComponent />
         <ContactComponent />
       </div>
