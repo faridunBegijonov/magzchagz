@@ -9,7 +9,7 @@ export const AboutComponent: React.FC = () => {
   return (
     <div
       id="about"
-      className="bg-[#114E58FF] s:px-[20px] s:py-[25px] w-[100%] xl:px-[50px] py-[45px]  px-[80px] "
+      className="s:px-[20px] s:py-[25px] w-[100%] xl:px-[50px] py-[45px]  px-[80px] "
     >
       <div className="h-screen w-[100%] flex items-center justify-center">
         <div className="flex items-center justify-center flex-col">
