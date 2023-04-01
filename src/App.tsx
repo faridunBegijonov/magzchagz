@@ -4,6 +4,7 @@ import {
   SidebarComponent,
   AboutComponent,
 } from "./components";
+import { itemVideoModel } from "./components/banner/model";
 
 function App() {
   return (

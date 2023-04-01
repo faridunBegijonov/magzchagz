@@ -2,14 +2,14 @@ import React from "react";
 import logo from "../../assets/about/Logo.png";
 import img from "../../assets/about/logomagz 1.png";
 import img2 from "../../assets/about/Magz.png";
-import about2Img from "../../assets/about/о нас3.png";
+import about2Img from "../../assets/about/о нас4.png";
 import { aboutModel, aboutModel2, IAboutModel } from "./about.model";
 
 export const AboutComponent: React.FC = () => {
   return (
     <div
       id="about"
-      className="s:px-[20px] s:py-[25px] w-[100%] xl:px-[50px] py-[45px]  px-[80px] "
+      className="bg-[#114E58FF] s:px-[20px] s:py-[25px] w-[100%] xl:px-[50px] py-[45px]  px-[80px] "
     >
       <div className="h-screen w-[100%] flex items-center justify-center">
         <div className="flex items-center justify-center flex-col">
@@ -116,10 +116,15 @@ export const AboutComponent: React.FC = () => {
           ))}
         </div>
       </div>
-      <img
-        src={about2Img}
-        className="2xl:mt-[100px] xl:mt-[80px] sm:hidden mx-auto mt-[160px]"
-      />
+      <div className="2xl:mt-[100px] xl:mt-[80px] mt-[160px] sm:hidden  ">
+        <h1 className="sm:text-[24px] 2xl:text-[34px] text-[54px] text-[white] text-center">
+          НАШ ПОДХОД К РАБОТЕ
+        </h1>
+        <img
+          src={about2Img}
+          className="2xl:mt-[100px] xl:mt-[80px] lg:mt-[50px] mx-auto"
+        />
+      </div>
     </div>
   );
 };
