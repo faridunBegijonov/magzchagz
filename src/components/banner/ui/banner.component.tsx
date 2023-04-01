@@ -70,7 +70,9 @@ export const BannerComponent: FC = () => {
             МЫ ПРИДУМЫВАЕМ И ПРОИЗВОДИМ ВИДЕОРОЛИКИ САМОГО РАЗНОГО СТИЛЯ И
             НАПРАВЛЕНИЙ
           </h1>
-          <div className="sm:text-[10px]">Нам доверяют</div>
+          <div className="sm:text-[10px] absolute 3xl:bottom-[200px] 2xl:bottom-[150px] xl:bottom-[200px] lg:bottom-[150px] sm:bottom-[100px] bottom-[300px]">
+            Нам доверяют
+          </div>
           <Swiper className="w-[80%] xl:w-[100%]" slidesPerView={2}>
             <SwiperSlide>
               <img className="w-[100%]" src={img1} alt="Logo" />
