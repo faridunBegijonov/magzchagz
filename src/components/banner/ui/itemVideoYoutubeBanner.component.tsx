@@ -36,7 +36,7 @@ export const ItemVideoYoutubeBannerComponent: FC<ItemVideoType> = ({
             animate="animate"
             exit="exit"
             onClick={handlerModal}
-            className="fixed z-99 top-0 bottom-0 left-0 right-0 bgBanner h-screen w-[100%] flex items-center justify-center"
+            className="fixed z-[100] top-0 bottom-0 left-0 right-0 bgBanner h-screen w-[100%] flex items-center justify-center"
           >
             <div
               onClick={handlerModal}
