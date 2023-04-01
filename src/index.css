@@ -66,3 +66,9 @@ body {
   margin-left: 0 !important;
   z-index: 0 !important;
 }
+
+.bgBannerImgContact {
+  background-image: url("./assets/contact/121212212112 (2).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

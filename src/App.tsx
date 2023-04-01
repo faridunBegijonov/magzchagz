@@ -6,6 +6,7 @@ import {
   ItemVideoYoutubeBannerComponent,
 } from "./components";
 import { itemVideoModel } from "./components/banner/model";
+import { ContactComponent } from "./components/contact/contact.component";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           })}
         </div>
         <AboutComponent />
+        <ContactComponent />
       </div>
     </>
   );
