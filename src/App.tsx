@@ -20,6 +20,13 @@ function App() {
             );
           })}
         </div>
+        <div className="sm:hidden flex items-center justify-between xl:flex hidden ">
+          {itemVideoModel.map((item) => {
+            return (
+              <ItemVideoYoutubeBannerComponent key={item.srcVideo} {...item} />
+            );
+          })}
+        </div>
         <AboutComponent />
       </div>
     </>
