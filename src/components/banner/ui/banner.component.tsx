@@ -13,6 +13,7 @@ import img3 from "../../../assets/logo/3.png";
 import img4 from "../../../assets/logo/4.png";
 import img5 from "../../../assets/logo/5.png";
 import { Swiper, SwiperSlide } from "swiper/react";
+import pdf from "../../../magzfinal_draft1.pdf";
 import "swiper/css";
 
 export const BannerComponent: FC = () => {
@@ -35,11 +36,7 @@ export const BannerComponent: FC = () => {
           </div>
           <div className="absolute right-0 bottom-0"></div>
           <div className="flex items-center justify-between w-[100%]">
-            <a
-              href="./magzfinal_draft1.pdf"
-              download
-              className="flex items-center"
-            >
+            <a href={pdf} download className="flex items-center">
               <img
                 src={pdfImg}
                 alt="Img"
