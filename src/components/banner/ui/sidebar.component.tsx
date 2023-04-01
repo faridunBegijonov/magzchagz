@@ -1,9 +1,11 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import logo from "../../../assets/sidebar/logo.png";
-import { linksModel } from "../../sidebar/model/links.model";
 import { AnimatePresence, motion } from "framer-motion";
 import { ISidebarBannerProps } from "../types";
 import { sidebarAnimate } from "../model";
+import { linksModel } from "../../sidebar/model";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 export const SidebarComponentBanner: FC<ISidebarBannerProps> = ({ isOpen }) => {
   return (
@@ -17,8 +19,9 @@ export const SidebarComponentBanner: FC<ISidebarBannerProps> = ({ isOpen }) => {
           transition={{
             duration: 0.8,
           }}
-          className="xl:block hidden z-99 xl:py-[28px] s:w-[250px] sm:w-[300px]  lg:w-[350px] py-[48px] px-[14px] flex items-center flex-col justify-between fixed left-0 top-0 bottom-0 w-[250px] h-screen bg-[#171717] "
+          className="xl:block hidden z-99 xl:py-[28px] sm:w-full  lg:w-[350px] py-[48px] px-[14px] flex items-center flex-col justify-between fixed left-0 top-0 bottom-0 w-[250px] h-screen bg-[#171717] "
         >
+          <CloseIcon className="text-[#fff]" sx={{ fontSize: "2.5rem" }} />
           <div className="flex items-center flex-col justify-between ">
             <a href="#home">
               <img src={logo} className="w-[113px] h-[113px]" alt="Logo" />
