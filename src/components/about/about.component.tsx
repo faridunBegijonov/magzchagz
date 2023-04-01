@@ -35,10 +35,10 @@ export const AboutComponent: React.FC = () => {
       </div>
 
       <div className="max-[920px]:mt-[100px] lg:mt-[120px] mt-[300px]">
-        <h1 className="sm:text-[24px] lg:text-[34px] text-center text-[44px] text-[white] font-bold">
-          ДАВАЙТЕ <br /> ТВОРИТЬ С НАМИ!
+        <h1 className="sm:text-[24px] lg:text-[34px] text-center text-[44px] text-[white] mx-auto mt-[24px] font-bold">
+          ДАВАЙТЕ ТВОРИТЬ С НАМИ!
         </h1>
-        <h2 className="sm:text-[16px] max-[920px]:text-[28px] max-[920px]:mt-[20px] lg:text-[34px] lg:mt-[50px] text-center text-[44px] text-[white]">
+        <h2 className="sm:text-[16px] w-[60%] mx-auto mt-8 max-[920px]:text-[28px] max-[920px]:mt-[20px] lg:text-[34px] lg:mt-[50px] text-center text-[44px] text-[white]">
           <span className="text-[#02FFFD]">
             MAGHZ - THINKING, FILMING, MAKING.
           </span>{" "}
@@ -52,9 +52,9 @@ export const AboutComponent: React.FC = () => {
           <h1 className=" sm:text-[24px] lg:text-[34px] text-[44px] text-[white] font-bold">
             КРЕАТИВ
             <br />
-            2В РЕШЕНИИ
+            В РЕШЕНИИ
             <br />
-            3АДАЧ
+            ЗАДАЧ
             <br />
             КЛИ4НТА
           </h1>
