@@ -19,7 +19,7 @@ export const AboutComponent: React.FC = () => {
             alt="Logo"
           />
           <h1 className="max-[900px]:text-[24px] sm:text-[24px] max-[900px]:mt-[10px] lg:text-[34px] lg:mt-[15px] text-center text-[44px] text-[white] font-bold mt-[60px]">
-            BRAIN <span className="text-[#02FFFD]">FO</span>CUSED ON YOU!
+            BRAIN F<span className="text-[#02FFFD]">O</span>CUSED ON YOU!
           </h1>
         </div>
       </div>
@@ -35,9 +35,6 @@ export const AboutComponent: React.FC = () => {
       </div>
 
       <div className="max-[920px]:mt-[100px] lg:mt-[120px] mt-[300px]">
-        <h1 className="sm:text-[24px] lg:text-[34px] text-center text-[44px] text-[white] mx-auto mt-[24px] font-bold">
-          ДАВАЙТЕ ТВОРИТЬ С НАМИ!
-        </h1>
         <h2 className="sm:text-[16px] 3xl:w-[100%] w-[60%] mx-auto mt-8 max-[920px]:text-[28px] max-[920px]:mt-[20px] lg:text-[34px] lg:mt-[50px] text-center text-[44px] text-[white]">
           <span className="text-[#02FFFD]">
             MAGHZ - THINKING, FILMING, MAKING.
@@ -116,15 +113,24 @@ export const AboutComponent: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="2xl:mt-[100px] xl:mt-[80px] mt-[160px] sm:hidden  ">
-        <h1 className="sm:text-[24px] 2xl:text-[34px] text-[54px] text-[white] text-center">
+      <div
+        className="2xl:mt-[100px] xl:mt-[80px] mt-[160px] sm:hidden 3xl:w-full w-[80%] mx-auto
+      "
+      >
+        <h1 className="sm:text-[24px] 2xl:text-[34px] text-[44px] text-[white] text-center">
           НАШ ПОДХОД К РАБОТЕ
         </h1>
         <img
           src={about2Img}
-          className="2xl:mt-[100px] xl:mt-[80px] lg:mt-[50px] mx-auto"
+          className="2xl:mt-[100px] xl:mt-[80px] lg:mt-[50px] w-full mx-auto"
         />
       </div>
+      <a
+        href="#our-works"
+        className="sm:text-[24px] text-center inline-block	flex justify-center transition-colors hover:text-[#8DA399FF] lg:text-[34px] text-center text-[44px] text-[white] mt-[24px] font-bold"
+      >
+        ДАВАЙТЕ ТВОРИТЬ С НАМИ!
+      </a>
     </div>
   );
 };
