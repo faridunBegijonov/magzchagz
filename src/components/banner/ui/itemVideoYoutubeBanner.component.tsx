@@ -16,7 +16,7 @@ export const ItemVideoYoutubeBannerComponent: FC<ItemVideoType> = ({
     <>
       <div
         onClick={handlerModal}
-        className="w-[300px] overflow-hidden h-[170px] relative cursor-pointer "
+        className="w-full overflow-hidden h-[170px] relative cursor-pointer "
       >
         <img
           src={logo}
@@ -44,13 +44,15 @@ export const ItemVideoYoutubeBannerComponent: FC<ItemVideoType> = ({
             >
               +
             </div>
-            <iframe
-              width="960"
-              height="515"
-              src={srcVideo}
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
+            <div className="sm:w-[80%] w-[50%] h-[50%]">
+              <iframe
+                width="100%"
+                height="100%"
+                src={srcVideo}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

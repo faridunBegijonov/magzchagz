@@ -28,7 +28,7 @@ export const BannerComponent: FC = () => {
           muted
         />
         <div className="s:px-[20px] s:py-[25px] w-[100%] h-screen bgBanner absolute top-0 left-0 right-0 bottom-0 xl:px-[50px] py-[45px]  px-[80px] flex items-start justify-between flex-col">
-          <div className="xl:hidden absolute right-0 bottom-0">
+          <div className="xl:hidden w-[300px] absolute right-0 bottom-0">
             {itemVideoModel.map((item: ItemVideoType) => (
               <ItemVideoYoutubeBannerComponent key={item.srcVideo} {...item} />
             ))}

@@ -19,7 +19,7 @@ export const SidebarComponentBanner: FC<ISidebarBannerProps> = ({ isOpen }) => {
           transition={{
             duration: 0.8,
           }}
-          className="xl:block hidden z-99 xl:py-[28px] sm:w-full  lg:w-[350px] py-[48px] px-[14px] flex items-center flex-col justify-between fixed left-0 top-0 bottom-0 w-[250px] h-screen bg-[#171717] "
+          className="xl:block hidden z-[101] xl:py-[28px] sm:w-full  lg:w-[350px] py-[48px] px-[14px] flex items-center flex-col justify-between fixed left-0 top-0 bottom-0 w-[250px] h-screen bg-[#171717] "
         >
           <CloseIcon className="text-[#fff]" sx={{ fontSize: "2.5rem" }} />
           <div className="flex items-center flex-col justify-between ">
