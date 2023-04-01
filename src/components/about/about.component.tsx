@@ -38,7 +38,7 @@ export const AboutComponent: React.FC = () => {
         <h1 className="sm:text-[24px] lg:text-[34px] text-center text-[44px] text-[white] mx-auto mt-[24px] font-bold">
           ДАВАЙТЕ ТВОРИТЬ С НАМИ!
         </h1>
-        <h2 className="sm:text-[16px] w-[60%] mx-auto mt-8 max-[920px]:text-[28px] max-[920px]:mt-[20px] lg:text-[34px] lg:mt-[50px] text-center text-[44px] text-[white]">
+        <h2 className="sm:text-[16px] 3xl:w-[100%] w-[60%] mx-auto mt-8 max-[920px]:text-[28px] max-[920px]:mt-[20px] lg:text-[34px] lg:mt-[50px] text-center text-[44px] text-[white]">
           <span className="text-[#02FFFD]">
             MAGHZ - THINKING, FILMING, MAKING.
           </span>{" "}
@@ -47,26 +47,28 @@ export const AboutComponent: React.FC = () => {
         </h2>
       </div>
 
-      <div className="sm:flex-col 2xl:mt-[80px] max-[900px]:flex-col max-[900px]:justify-center lg:mt-[120px] mt-[300px] flex items-center justify-around">
-        <div className="2xl:w-[100%] max-[900px]:w-[100%] w-[50%]">
-          <h1 className=" sm:text-[24px] lg:text-[34px] text-[44px] text-[white] font-bold">
-            КРЕАТИВ
-            <br />
-            В РЕШЕНИИ
-            <br />
-            ЗАДАЧ
-            <br />
-            КЛИ4НТА
-          </h1>
-          <p className="sm:text-[16px] sm:mt-[20px] 2xl:mt-[40px] text-[white] mt-[100px] text-[25px]">
-            ЛЮБАЯ ЗАДАЧА, КОТОРАЯ СТОИТ ПЕРЕД НАМИ - ЭТО НЕ ПРОСТО ПРОИЗВОДСТВО.
-            ЭТО, В ПЕРВУЮ ОЧЕРЕДЬ, ХУДОЖЕСТВЕННОЕ РЕШЕНИЕ, КОТОРОЕ ЗАСТАВИТ
-            ЗРИТЕЛЕЙ ПЕРЕСМАТРИВАТЬ ВИДЕО{" "}
-            <span className="text-[#02FFFD]">СНОВА И СНОВА</span>, ЧТОБЫ
-            ПОЛУЧИТЬ ЭМОЦИИ. ТЕ ЭМОЦИИ, КОТОРЫЕ ВЫ И ХОТЕЛИ ИМ ПЕРЕДАТЬ.
-          </p>
+      <div className="max-w-[1280px] mx-auto">
+        <div className="sm:flex-col 2xl:mt-[80px] max-[900px]:flex-col max-[900px]:justify-center lg:mt-[120px] mt-[300px] flex items-center justify-around">
+          <div className="2xl:w-[100%] max-[900px]:w-[100%] w-[50%]">
+            <h1 className="sm:mb-8 sm:text-[24px] lg:text-[34px] xl:text-[54px] text-[64px] text-[white] font-bold">
+              КРЕАТИВ
+              <br />
+              В РЕШЕНИИ
+              <br />
+              ЗАДАЧ
+              <br />
+              КЛИЕНТА
+            </h1>
+          </div>
+          <img src={img2} alt="Img" className="sm:block" />
         </div>
-        <img src={img2} alt="Img" className="2xl:hidden sm:block" />
+        <p className="sm:text-[16px] sm:mt-[20px] text-center 2xl:mt-[40px] text-[white] mt-[100px] text-[25px]">
+          ЛЮБАЯ ЗАДАЧА, КОТОРАЯ СТОИТ ПЕРЕД НАМИ - ЭТО НЕ ПРОСТО ПРОИЗВОДСТВО.
+          ЭТО, В ПЕРВУЮ ОЧЕРЕДЬ, ХУДОЖЕСТВЕННОЕ РЕШЕНИЕ, КОТОРОЕ ЗАСТАВИТ
+          ЗРИТЕЛЕЙ ПЕРЕСМАТРИВАТЬ ВИДЕО{" "}
+          <span className="text-[#02FFFD]">СНОВА И СНОВА</span>, ЧТОБЫ ПОЛУЧИТЬ
+          ЭМОЦИИ. ТЕ ЭМОЦИИ, КОТОРЫЕ ВЫ И ХОТЕЛИ ИМ ПЕРЕДАТЬ.
+        </p>
       </div>
 
       <div className="sm:mt-[50px] max-[770px]:mt-[80px] 2xl:mt-[100px] mt-[200px] max-w-[1280px] mx-auto ">
