@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ItemOurWorksComponent } from "./itemOurWorks.component";
 import { ItemVideoType } from "../banner";
 import img1 from "../../assets/project/cls.jpg";
@@ -11,8 +11,9 @@ import img7 from "../../assets/project/zwjh.jpg";
 import img8 from "../../assets/project/navruzs23ultra.jpg";
 import img9 from "../../assets/project/phoneZfold.jpg";
 import img10 from "../../assets/project/nafisa.jpg";
+import { Link } from "react-router-dom";
 
-const ourWorksModel: ItemVideoType[] = [
+export const ourWorksModel: ItemVideoType[] = [
   {
     img: img1,
     srcVideo: "https://www.youtube.com/embed/rXVsCDrMzjc",
@@ -110,16 +111,15 @@ export const OurWorksComponent: React.FC = () => {
           <ItemOurWorksComponent {...item} key={item.title} />
         ))}
       </div>
-      <div
-        id="our-works"
-        className="sm:flex flex items-center justify-center flex-col hidden"
-      >
+      <div className="sm:flex flex items-center justify-center flex-col hidden">
         {ourWorksModel2.map((item: ItemVideoType) => (
           <ItemOurWorksComponent {...item} key={item.title} />
         ))}
-        <button className="mt-[8px] mx-[13px]  w-[95%] bg-[#e53012] py-[13px] px-[24px]">
-          Больше проектов
-        </button>
+        <Link className="w-full" to="/projects">
+          <button className="mt-[8px] mx-[13px]  w-[95%] bg-[#e53012] py-[13px] px-[24px]">
+            Больше проектов
+          </button>
+        </Link>
       </div>
     </>
   );
