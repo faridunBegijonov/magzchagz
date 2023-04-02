@@ -1,5 +1,5 @@
 import React from "react";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { ItemVideoType } from "./components";
 import { ItemOurWorksComponent } from "./components/ourWorks/itemOurWorks.component";
 import { ourWorksModel } from "./components/ourWorks/ourWorks.component";
@@ -12,7 +12,7 @@ export const ProjectsPage: React.FC = () => {
       <div className="flex items-center justify-between px-[18px] py-[25px]">
         <h1 className="text-[25px] font-bold">Все проекты</h1>
         <Link to="/">
-          <ChevronRightIcon sx={{ fontSize: "35px" }} />
+          <ChevronLeftIcon sx={{ fontSize: "35px" }} />
         </Link>
       </div>
       <div className="gridProject">

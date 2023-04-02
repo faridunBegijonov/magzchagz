@@ -11,6 +11,10 @@ import img7 from "../../assets/project/zwjh.jpg";
 import img8 from "../../assets/project/navruzs23ultra.jpg";
 import img9 from "../../assets/project/phoneZfold.jpg";
 import img10 from "../../assets/project/nafisa.jpg";
+import img11 from "../../assets/project/foodfest.jpg";
+import img12 from "../../assets/project/unnamed.webp";
+import img13 from "../../assets/project/hqdefault.jpg";
+import img14 from "../../assets/project/maxresdefault (1).jpg";
 import { Link } from "react-router-dom";
 
 export const ourWorksModel: ItemVideoType[] = [
@@ -72,6 +76,30 @@ export const ourWorksModel: ItemVideoType[] = [
     img: img10,
     srcVideo: "https://www.youtube.com/embed/y9PE-u5485k",
     title: "ZHIWJ MEANS LOVE - TVC",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img11,
+    srcVideo: "https://www.youtube.com/embed/gJOXZNurG2I",
+    title: "FoodFest Dushanbe - Highlights 2017",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img12,
+    srcVideo: "https://www.youtube.com/embed/PT1Ma51wNRU",
+    title: "Megafon Tajikistan - 20 ЛЕТ",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img13,
+    srcVideo: "https://www.youtube.com/embed/sOhytVV4duI",
+    title: "Интернет-магазин Gelos - TVC",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img14,
+    srcVideo: "https://www.youtube.com/embed/a3O8rKqOpoY",
+    title: "RakshRace - Highlights 2022",
     type: "Рекламный ролик",
   },
 ];
