@@ -27,14 +27,14 @@ export const ContactComponent: React.FC = () => {
                   <YouTubeIcon sx={{ fontSize: "35px" }} />
                 </div>
                 <div className="ml-[14px]">
-                  <h1 className="3xl:text-[25px] xl:text-[20px] font-bold text-[29px]">
+                  <h1 className="3xl:text-[25px] xl:text-[20px] sm:text-[18px] font-bold text-[29px]">
                     Портфолио на YouTube
                   </h1>
                   <a
                     href="https://www.youtube.com/@JereemeProWork"
                     rel="noreferrer"
                     target="_blank"
-                    className="3xl:text-[20px] underline hover:no-underline mt-[4px] text-[25px] text-[#41ADF0FF]"
+                    className="3xl:text-[20px] sm:text-[16px] underline hover:no-underline mt-[4px] text-[25px] text-[#41ADF0FF]"
                   >
                     Magzchagz Production
                   </a>
@@ -53,14 +53,14 @@ export const ContactComponent: React.FC = () => {
                   <TelegramIcon sx={{ fontSize: "35px" }} />
                 </div>
                 <div className="ml-[14px]">
-                  <h1 className="3xl:text-[25px] font-bold text-[29px]">
+                  <h1 className="3xl:text-[25px] sm:text-[18px] font-bold text-[29px]">
                     Telegram
                   </h1>
                   <a
                     href="https://t.me/magzchagzbot"
                     rel="noreferrer"
                     target="_blank"
-                    className="3xl:text-[20px] underline hover:no-underline mt-[4px] text-[25px] text-[#41ADF0FF]"
+                    className="3xl:text-[20px] underline sm:text-[16px] hover:no-underline mt-[4px] text-[25px] text-[#41ADF0FF]"
                   >
                     @magzchagzbot
                   </a>
@@ -79,14 +79,14 @@ export const ContactComponent: React.FC = () => {
                   <EmailIcon sx={{ fontSize: "35px" }} />
                 </div>
                 <div className="ml-[14px]">
-                  <h1 className="3xl:text-[25px] font-bold text-[29px]">
+                  <h1 className="3xl:text-[25px] sm:text-[18px] font-bold text-[29px]">
                     E-mail для заказчиков
                   </h1>
                   <a
                     href="mailto:maghzchaghz@gmail.com"
                     rel="noreferrer"
                     target="_blank"
-                    className="3xl:text-[20px] underline hover:no-underline mt-[4px] text-[25px] text-[#41ADF0FF]"
+                    className="3xl:text-[20px] sm:text-[16px] underline hover:no-underline mt-[4px] text-[25px] text-[#41ADF0FF]"
                   >
                     maghzchaghz@gmail.com
                   </a>
@@ -105,14 +105,14 @@ export const ContactComponent: React.FC = () => {
                   <EmailIcon sx={{ fontSize: "35px" }} />
                 </div>
                 <div className="ml-[14px]">
-                  <h1 className="3xl:text-[25px] font-bold text-[29px]">
+                  <h1 className="3xl:text-[25px] sm:text-[18px] font-bold text-[29px]">
                     Сотрудничество
                   </h1>
                   <a
                     href="mailto:sayodzade@gmail.com"
                     rel="noreferrer"
                     target="_blank"
-                    className="3xl:text-[20px] underline hover:no-underline mt-[4px] text-[25px] text-[#41ADF0FF]"
+                    className="3xl:text-[20px] sm:text-[16px] underline hover:no-underline mt-[4px] text-[25px] text-[#41ADF0FF]"
                   >
                     sayodzade@gmail.com
                   </a>
