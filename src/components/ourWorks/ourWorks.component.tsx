@@ -12,10 +12,9 @@ import img8 from "../../assets/project/navruzs23ultra.jpg";
 import img9 from "../../assets/project/phoneZfold.jpg";
 import img10 from "../../assets/project/nafisa.jpg";
 import img11 from "../../assets/project/foodfest.jpg";
-import img12 from "../../assets/project/unnamed.webp";
-import img13 from "../../assets/project/hqdefault.jpg";
-import img14 from "../../assets/project/maxresdefault (1).jpg";
-import { Link } from "react-router-dom";
+import img12 from "../../assets/project/image_2023-04-02_14-55-49.png";
+import img13 from "../../assets/project/image_2023-04-02_14-56-10.png";
+import img14 from "../../assets/project/image_2023-04-02_14-55-27 (1) (1) (1) (1) (1).png";
 
 export const ourWorksModel: ItemVideoType[] = [
   {
@@ -132,6 +131,7 @@ const ourWorksModel2: ItemVideoType[] = [
 ];
 
 export const OurWorksComponent: React.FC = () => {
+  const [mobile, setMobile] = useState(true);
   return (
     <>
       <div id="our-works" className="sm:hidden gridProject">
@@ -140,14 +140,19 @@ export const OurWorksComponent: React.FC = () => {
         ))}
       </div>
       <div className="sm:flex flex items-center justify-center flex-col hidden">
-        {ourWorksModel2.map((item: ItemVideoType) => (
-          <ItemOurWorksComponent {...item} key={item.title} />
-        ))}
-        <Link className="w-full" to="/projects">
-          <button className="mt-[8px] mx-[13px]  w-[95%] bg-[#e53012] py-[13px] px-[24px]">
-            Больше проектов
-          </button>
-        </Link>
+        {mobile
+          ? ourWorksModel2.map((item: ItemVideoType) => (
+              <ItemOurWorksComponent {...item} key={item.title} />
+            ))
+          : ourWorksModel.map((item: ItemVideoType) => (
+              <ItemOurWorksComponent {...item} key={item.title} />
+            ))}
+        <button
+          onClick={() => setMobile(!mobile)}
+          className="mt-[8px] mx-[13px]  w-[95%] bg-[#e53012] py-[13px] px-[24px]"
+        >
+          {mobile ? "Больше проектов" : "Свернуть"}
+        </button>
       </div>
     </>
   );
