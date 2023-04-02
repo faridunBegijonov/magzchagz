@@ -18,6 +18,25 @@ import img14 from "../../assets/project/image_2023-04-02_14-55-27 (1) (1) (1) (1
 
 export const ourWorksModel: ItemVideoType[] = [
   {
+    img: img8,
+    srcVideo: "https://www.youtube.com/embed/mybhln-X6fA",
+    title: "Navrooz - Shot on Galaxy S23 Ultra",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img7,
+    srcVideo: "https://www.youtube.com/embed/VijeT2_X5_s",
+    title: "Tamaddoon - ZHIWJ",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img4,
+    srcVideo: "https://www.youtube.com/embed/Cfv3zaNcKi0",
+    title: "Samsung - Safarmuhammad New Year",
+    type: "Рекламный ролик",
+  },
+
+  {
     img: img1,
     srcVideo: "https://www.youtube.com/embed/rXVsCDrMzjc",
     title: "Pierre Cardin Cometics Teaser",
@@ -29,6 +48,19 @@ export const ourWorksModel: ItemVideoType[] = [
     title: "Documentary - Health",
     type: "Документальный фильм",
   },
+
+  {
+    img: img9,
+    srcVideo: "https://www.youtube.com/embed/jLExQac7vks",
+    title: "Samsung ZFold4 - Nafisa Imranova",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img14,
+    srcVideo: "https://www.youtube.com/embed/a3O8rKqOpoY",
+    title: "RakshRace - Highlights 2022",
+    type: "Рекламный ролик",
+  },
   {
     img: img3,
     srcVideo: "https://www.youtube.com/embed/kzcxVlmvMHQ",
@@ -36,9 +68,9 @@ export const ourWorksModel: ItemVideoType[] = [
     type: "Рекламный ролик",
   },
   {
-    img: img4,
-    srcVideo: "https://www.youtube.com/embed/Cfv3zaNcKi0",
-    title: "Samsung - Safarmuhammad New Year",
+    img: img10,
+    srcVideo: "https://www.youtube.com/embed/y9PE-u5485k",
+    title: "ZHIWJ MEANS LOVE - TVC",
     type: "Рекламный ролик",
   },
   {
@@ -53,30 +85,7 @@ export const ourWorksModel: ItemVideoType[] = [
     title: "Comfort Baby - TVC",
     type: "Рекламный ролик",
   },
-  {
-    img: img7,
-    srcVideo: "https://www.youtube.com/embed/VijeT2_X5_s",
-    title: "Tamaddoon - ZHIWJ",
-    type: "Рекламный ролик",
-  },
-  {
-    img: img8,
-    srcVideo: "https://www.youtube.com/embed/mybhln-X6fA",
-    title: "Navrooz - Shot on Galaxy S23 Ultra",
-    type: "Рекламный ролик",
-  },
-  {
-    img: img9,
-    srcVideo: "https://www.youtube.com/embed/jLExQac7vks",
-    title: "Samsung ZFold4 - Nafisa Imranova",
-    type: "Рекламный ролик",
-  },
-  {
-    img: img10,
-    srcVideo: "https://www.youtube.com/embed/y9PE-u5485k",
-    title: "ZHIWJ MEANS LOVE - TVC",
-    type: "Рекламный ролик",
-  },
+
   {
     img: img11,
     srcVideo: "https://www.youtube.com/embed/gJOXZNurG2I",
@@ -93,12 +102,6 @@ export const ourWorksModel: ItemVideoType[] = [
     img: img13,
     srcVideo: "https://www.youtube.com/embed/sOhytVV4duI",
     title: "Интернет-магазин Gelos - TVC",
-    type: "Рекламный ролик",
-  },
-  {
-    img: img14,
-    srcVideo: "https://www.youtube.com/embed/a3O8rKqOpoY",
-    title: "RakshRace - Highlights 2022",
     type: "Рекламный ролик",
   },
 ];
