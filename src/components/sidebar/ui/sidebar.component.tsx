@@ -20,22 +20,24 @@ export const SidebarComponent: FC = () => {
           ))}
         </div>
       </div>
-      <a
-        href="tel:+992 90 911 2221"
-        className="hover:text-[#8DA399] transition-colors"
-      >
-        +992 90 911 2221
-      </a>
-      <a
-        className="w-full"
-        target="_blank"
-        rel="noreferrer"
-        href="https://t.me/magzchagzbot"
-      >
-        <button className="w-full bg-[#e53012] py-[13px] px-[24px]">
-          Telegram Bot
-        </button>
-      </a>
+      <div className="flex items-center w-full justify-center flex-col">
+        <a
+          className="w-full"
+          target="_blank"
+          rel="noreferrer"
+          href="https://t.me/magzchagzbot"
+        >
+          <button className="w-full mb-8 bg-[#e53012] py-[13px] px-[24px]">
+            Telegram Bot
+          </button>
+        </a>
+        <a
+          href="tel:+992 90 911 2221"
+          className="hover:text-[#8DA399] transition-colors"
+        >
+          +992 90 911 2221
+        </a>
+      </div>
     </div>
   );
 };
