@@ -72,7 +72,6 @@ export const BannerComponent: FC = () => {
           </div>
           <Swiper className="w-[80%] xl:w-[100%]" slidesPerView={2}>
             <SwiperSlide>
-              3
               <img className="w-[100%]" src={img1} alt="Logo" />
             </SwiperSlide>
             <SwiperSlide>
