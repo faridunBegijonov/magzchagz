@@ -26,8 +26,8 @@ export const OprosComponent: React.FC = () => {
                 Какая тематика съёмки вам подходит?
               </h1>
               <div className="w-[80%]">
-                <div className="flex items-center mt-8">
-                  <div className="flex items-center 3xl:w-[300px] w-[500px]  ">
+                <div className="flex items-center sm:h-[180px] sm:justify-between sm:flex-col mt-8">
+                  <div className="flex items-center  3xl:w-[300px] sm:w-full w-[500px]  ">
                     <input
                       type="radio"
                       id="Видеопрезентация"
@@ -41,7 +41,7 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
 
-                  <div className="flex items-center 3xl:w-[300px] w-[500px] ">
+                  <div className="flex items-center 3xl:w-[300px] sm:w-full w-[500px] ">
                     <input
                       type="radio"
                       id="Рекламный ролик (промо)"
@@ -58,7 +58,7 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
 
-                  <div className="flex items-center 3xl:w-[300px] w-[500px] ">
+                  <div className="flex items-center 3xl:w-[300px] sm:w-full w-[500px] ">
                     <input
                       type="radio"
                       id="Освещение мероприятий"
@@ -75,8 +75,8 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
                 </div>
-                <div className="flex items-center mt-8">
-                  <div className="flex items-center 3xl:w-[300px] w-[500px] ">
+                <div className="flex items-center sm:flex-col sm:h-[160px] sm:mt-5 sm:justify-between sm:mt-0 mt-8">
+                  <div className="flex items-center sm:w-full 3xl:w-[300px] w-[500px] ">
                     <input
                       type="radio"
                       id="Корпоративный ролик"
@@ -93,7 +93,7 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
 
-                  <div className="flex items-center3xl:w-[300px] w-[500px] ">
+                  <div className="flex items-center3xl:w-[300px] sm:w-full w-[500px] ">
                     <input
                       type="radio"
                       id="Обучающий фильм"
@@ -107,7 +107,7 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
 
-                  <div className="flex items-center 3xl:w-[300px] w-[500px] ">
+                  <div className="flex items-center 3xl:w-[300px] sm:w-full w-[500px] ">
                     <input
                       type="radio"
                       id="Другое"
@@ -127,6 +127,9 @@ export const OprosComponent: React.FC = () => {
                 >
                   СЛЕДУЮЩИЙ
                 </button>
+                <h1 className="mt-4 font-bold text-[28px] lg:w-full flex justify-end w-[60%] ">
+                  1 / 10
+                </h1>
               </div>
             </>
           ) : (
@@ -134,9 +137,9 @@ export const OprosComponent: React.FC = () => {
               <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                 Пройдите опрос <br /> из 10 вопросов
               </h1>
-              <div className="flex items-center mt-[22px]">
+              <div className="flex items-center sm:items-start sm:flex-col mt-[22px]">
                 <img className="3xl:w-[200px] w-[400px]" src={img} alt="Img" />
-                <p className="text-[25px] w-[40%] ml-[18px] ">
+                <p className="text-[25px] sm:w-full sm:mt-4 w-[40%] ml-[18px] ">
                   и получите{" "}
                   <span className="jobT text-[#222] bg-[#FFC600FF] px-[18px] font-bold py-1">
                     скидку 10%
