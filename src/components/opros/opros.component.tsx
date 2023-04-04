@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import video from "../../assets/banner/Siyoma Rose drink water TVC.mp4";
 import img from "../../assets/opros/quiz.png";
+import { CellComponent } from "./cell.component";
 
 export const OprosComponent: React.FC = () => {
   const [start, setStart] = useState(false);
   const [tematika, setTematika] = useState("Видеопрезентация");
+  const [hideStart, setHideStart] = useState(false);
   const handleChange = (event: any) => {
     console.log(event.target.value);
     setTematika(event.target.value);
+  };
+
+  const close1Opros = () => {
+    setHideStart(true);
   };
   return (
     <>
@@ -20,8 +26,9 @@ export const OprosComponent: React.FC = () => {
           muted
         />
         <div className="s:px-[20px] s:py-[25px] w-[100%] h-screen bgBanner absolute top-0 left-0 right-0 bottom-0 xl:px-[50px] py-[45px]  px-[80px] flex items-start justify-center flex-col">
+          {hideStart && <CellComponent />}
           {start ? (
-            <>
+            <div className={`${hideStart && "hidden"}`}>
               <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                 Какая тематика съёмки вам подходит?
               </h1>
@@ -122,7 +129,7 @@ export const OprosComponent: React.FC = () => {
                   </div>
                 </div>
                 <button
-                  onClick={() => alert(tematika)}
+                  onClick={close1Opros}
                   className="text-[20px] text-[24px] mx-auto mt-[38px] 3xl:text-[20px]  bg-[#e53012] 3xl:py-[7px] py-[15px] px-[34px]"
                 >
                   СЛЕДУЮЩИЙ
@@ -131,7 +138,7 @@ export const OprosComponent: React.FC = () => {
                   1 / 10
                 </h1>
               </div>
-            </>
+            </div>
           ) : (
             <>
               <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
