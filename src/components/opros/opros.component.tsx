@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import video from "../../assets/banner/Siyoma Rose drink water TVC.mp4";
 import img from "../../assets/opros/quiz.png";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 export const OprosComponent: React.FC = () => {
   const [start, setStart] = useState(false);
@@ -95,8 +96,13 @@ export const OprosComponent: React.FC = () => {
         >
           {start ? (
             <>
+              {sendBnt && (
+                <div className="  fixed bg-[#004242FF] p-5 font-bold w-[280px] rounded-3xl flex items-center justify-center top-[30px] right-[18px]  sm:right-0 sm:left-0 sm:top-[90%] sm:w-full sm:bottom-0 sm:rounded-none">
+                  <LocalPhoneIcon sx={{ mr: 2 }} /> Дождитесь звонка
+                </div>
+              )}
               <div className="w-[100%]">
-                <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
+                <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug 	 text-[#fff] font-[900] w-[950px]">
                   Какая тематика съёмки вам подходит?
                 </h1>
                 <div className="flex items-center flex-wrap w-[80%] mt-[18px] ">
