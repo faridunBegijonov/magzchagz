@@ -73,6 +73,9 @@ export const OprosComponent: React.FC = () => {
       setPhoneAvtor("");
       setSendBtn(true);
       setPolya(false);
+      setTimeout(() => {
+        setSendBtn(false);
+      }, 4000);
     } else {
       setPolya(true);
     }
@@ -81,7 +84,7 @@ export const OprosComponent: React.FC = () => {
     <>
       <div
         id="price"
-        className={`${start && "h-auto"} h-[screen] relative ${
+        className={`${start && "h-auto"} bgApros h-[screen] relative ${
           start ? "" : "overflow-hidden"
         }`}
       >

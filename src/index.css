@@ -38,6 +38,12 @@ label {
 
 }
 
+.bgApros {
+  /*background-image: url("../src/assets/project/");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .contentInput div div input {
   padding: 18px;
