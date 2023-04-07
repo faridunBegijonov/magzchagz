@@ -199,7 +199,7 @@ export const OprosComponent: React.FC = () => {
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                   Какую цель преследует ваше видео?
                 </h1>
-                <div className="flex items-center flex-wrap w-[80%] mt-[18px] ">
+                <div className="flex items-center flex-wrap sm:w-full w-[80%] mt-[18px] ">
                   <div className="flex items-center">
                     <input
                       type="radio"
