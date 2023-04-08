@@ -15,7 +15,7 @@ export const OprosComponent: React.FC = () => {
   const [kogda, setKogda] = useState("Сроки горят, есть меньше недели");
   const [auditori, setAuditori] = useState("Молодёжь, нужно хайпануть");
   const [geroy, setGeroy] = useState("Исключительно люди");
-  const [money, setMoney] = useState("Исключительно люди");
+  const [money, setMoney] = useState("Около 3000смн");
   const [sendBnt, setSendBtn] = useState(false);
   const [nameAvtor, setNameAvtor] = useState("");
   const [phoneAvtor, setPhoneAvtor] = useState("");
@@ -75,6 +75,7 @@ export const OprosComponent: React.FC = () => {
         "Когда полностью должно быть готово видео": kogda,
         "Какая целевая аудитория вас интересует": auditori,
         "Кто или что является героем видео": geroy,
+        "Какой примерный бюджет вашего видео": money,
         Имя: nameAvtor,
         Телефон: phoneAvtor,
       };
@@ -92,9 +93,10 @@ export const OprosComponent: React.FC = () => {
   };
   return (
     <>
-      <div id="price" className={`bgApros mt-[45px] h-[screen] relative`}>
+      <div id="price" className={`bgApros h-[screen] relative`}>
         <div
-          className={`s:px-[20px] s:py-[25px] w-[100%] xl:px-[50px] py-[45px]  px-[80px] h-screen flex items-start justify-center flex-col`}
+          className={`s:px-[20px] s:py-[25px] sm:h-auto  w-[100%] h-screen bgBanner xl:px-[50px] py-[45px]  px-[80px] flex items-start justify-center
+           flex-col`}
         >
           {start ? (
             <>
@@ -960,101 +962,81 @@ export const OprosComponent: React.FC = () => {
                   <div className="flex items-center">
                     <input
                       type="radio"
-                      id="Исключительно люди"
-                      name="Исключительно люди"
-                      value="Исключительно люди"
-                      checked={geroy === "Исключительно люди"}
-                      onChange={handleChangeGeroy}
-                    />
-                    <label className="text-[#fff]" htmlFor="Исключительно люди">
-                      Исключительно люди
-                    </label>
-                  </div>
-
-                  <div className="flex items-center">
-                    <input
-                      type="radio"
-                      id="Крупногабаритные предметы"
-                      name="Крупногабаритные предметы"
-                      value="Крупногабаритные предметы"
-                      checked={geroy === "Крупногабаритные предметы"}
-                      onChange={handleChangeGeroy}
+                      id="Около 3000смн"
+                      name="Около 3000смн"
+                      value="Около 3000смн"
+                      checked={money === "Около 3000смн"}
+                      onChange={handleChangeMoney}
                     />
                     <label
                       className="text-[#fff]"
-                      htmlFor="Крупногабаритные предметы"
+                      htmlFor="Около 50 тысяч рублей"
                     >
-                      Крупногабаритные предметы
+                      Около 3000смн
                     </label>
                   </div>
 
                   <div className="flex items-center">
                     <input
                       type="radio"
-                      id="Пейзажи, природа, пространство"
-                      name="Пейзажи, природа, пространство"
-                      value="Пейзажи, природа, пространство"
-                      checked={geroy === "Пейзажи, природа, пространство"}
-                      onChange={handleChangeGeroy}
+                      id="3000смн - 7000смн"
+                      name="3000смн - 7000смн"
+                      value="3000смн - 7000смн"
+                      checked={money === "3000смн - 7000смн"}
+                      onChange={handleChangeMoney}
+                    />
+                    <label className="text-[#fff]" htmlFor="3000смн - 7000смн">
+                      3000смн - 7000смн
+                    </label>
+                  </div>
+
+                  <div className="flex items-center">
+                    <input
+                      type="radio"
+                      id="7000смн - 10000смн"
+                      name="7000смн - 10000смн"
+                      value="7000смн - 10000смн"
+                      checked={money === "7000смн - 10000смн"}
+                      onChange={handleChangeMoney}
+                    />
+                    <label className="text-[#fff]" htmlFor="7000смн - 10000смн">
+                      7000смн - 10000смн
+                    </label>
+                  </div>
+
+                  <div className="flex items-center">
+                    <input
+                      type="radio"
+                      id="10000смн - 15000смн"
+                      name="10000смн - 15000смн"
+                      value="10000смн - 15000смн"
+                      checked={money === "10000смн - 15000смн"}
+                      onChange={handleChangeMoney}
                     />
                     <label
                       className="text-[#fff]"
-                      htmlFor="Пейзажи, природа, пространство"
+                      htmlFor="10000смн - 15000смн"
                     >
-                      Пейзажи, природа, пространство
+                      10000смн - 15000смн
                     </label>
                   </div>
 
                   <div className="flex items-center">
                     <input
                       type="radio"
-                      id="Интересует фудсъёмка"
-                      name="Интересует фудсъёмка"
-                      value="Интересует фудсъёмка"
-                      checked={geroy === "Интересует фудсъёмка"}
-                      onChange={handleChangeGeroy}
-                    />
-                    <label
-                      className="text-[#fff]"
-                      htmlFor="Интересует фудсъёмка"
-                    >
-                      Интересует фудсъёмка
-                    </label>
-                  </div>
-
-                  <div className="flex items-center">
-                    <input
-                      type="radio"
-                      id="Нужно будет снимать животных"
-                      name="Нужно будет снимать животных"
-                      value="Нужно будет снимать животных"
-                      checked={geroy === "Нужно будет снимать животных"}
-                      onChange={handleChangeGeroy}
-                    />
-                    <label
-                      className="text-[#fff]"
-                      htmlFor="Нужно будет снимать животных"
-                    >
-                      Нужно будет снимать животных
-                    </label>
-                  </div>
-
-                  <div className="flex items-center">
-                    <input
-                      type="radio"
-                      id="Совмещенная съёмка из нескольких вариантов"
-                      name="Совмещенная съёмка из нескольких вариантов"
-                      value="Совмещенная съёмка из нескольких вариантов"
+                      id="Деньги есть, главное достичь желаемой цели"
+                      name="Деньги есть, главное достичь желаемой цели"
+                      value="Деньги есть, главное достичь желаемой цели"
                       checked={
-                        geroy === "Совмещенная съёмка из нескольких вариантов"
+                        money === "Деньги есть, главное достичь желаемой цели"
                       }
-                      onChange={handleChangeGeroy}
+                      onChange={handleChangeMoney}
                     />
                     <label
                       className="text-[#fff]"
-                      htmlFor="Совмещенная съёмка из нескольких вариантов"
+                      htmlFor="Деньги есть, главное достичь желаемой цели"
                     >
-                      Совмещенная съёмка из нескольких вариантов
+                      Деньги есть, главное достичь желаемой цели
                     </label>
                   </div>
                 </div>
@@ -1122,7 +1104,7 @@ export const OprosComponent: React.FC = () => {
               </h1>
               <div className="flex items-center sm:items-start sm:flex-col mt-[22px]">
                 <img className="3xl:w-[200px] w-[400px]" src={img} alt="Img" />
-                <p className="text-[25px] sm:w-full sm:mt-4 w-[40%] ml-[18px] ">
+                <p className="text-[25px] sm:text-[20px] sm:w-full sm:mt-4 w-[40%] ml-[18px] ">
                   и получите{" "}
                   <span className="jobT text-[#222] bg-[#FFC600FF] px-[18px] font-bold py-1">
                     скидку 10%
