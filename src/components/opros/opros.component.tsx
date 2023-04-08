@@ -20,6 +20,15 @@ export const OprosComponent: React.FC = () => {
   const [nameAvtor, setNameAvtor] = useState("");
   const [phoneAvtor, setPhoneAvtor] = useState("");
   const [polya, setPolya] = useState(false);
+  const [opros1, setOpros1] = useState(false);
+  const [opros2, setOpros2] = useState(false);
+  const [opros3, setOpros3] = useState(false);
+  const [opros4, setOpros4] = useState(false);
+  const [opros5, setOpros5] = useState(false);
+  const [opros6, setOpros6] = useState(false);
+  const [opros7, setOpros7] = useState(false);
+  const [opros8, setOpros8] = useState(false);
+  const [opros9, setOpros9] = useState(false);
   const handleChange = (event: any) => {
     console.log(event.target.value);
     setTematika(event.target.value);
@@ -83,29 +92,22 @@ export const OprosComponent: React.FC = () => {
   };
   return (
     <>
-      <div
-        id="price"
-        className={`${start && "h-auto"} bgApros h-[screen] relative ${
-          start ? "" : "overflow-hidden"
-        }`}
-      >
+      <div id="price" className={`bgApros mt-[45px] h-[screen] relative`}>
         <div
-          className={`s:px-[20px] s:py-[25px] w-[100%] xl:px-[50px] py-[45px]  px-[80px] ${
-            start ? "" : "h-screen flex items-start justify-center"
-          } flex-col`}
+          className={`s:px-[20px] s:py-[25px] w-[100%] xl:px-[50px] py-[45px]  px-[80px] h-screen flex items-start justify-center flex-col`}
         >
           {start ? (
             <>
               {sendBnt && (
-                <div className="  fixed bg-[#004242FF] p-5 font-bold w-[280px] rounded-3xl flex items-center justify-center top-[30px] right-[18px]  sm:right-0 sm:left-0 sm:top-[90%] sm:w-full sm:bottom-0 sm:rounded-none">
+                <div className="fixed bg-[#004242FF] p-5 font-bold w-[280px] rounded-3xl flex items-center justify-center top-[30px] right-[18px]  sm:right-0 sm:left-0 sm:top-[90%] sm:w-full sm:bottom-0 sm:rounded-none">
                   <LocalPhoneIcon sx={{ mr: 2 }} /> Дождитесь звонка
                 </div>
               )}
-              <div className="w-[100%]">
+              <div className={`w-[100%] ${opros1 && "hidden"}`}>
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug 	 text-[#fff] font-[900] w-[950px]">
                   Какая тематика съёмки вам подходит?
                 </h1>
-                <div className="flex items-center flex-wrap w-[80%] mt-[18px] ">
+                <div className="flex items-center flex-wrap w-[80%]">
                   <div className="flex items-center">
                     <input
                       type="radio"
@@ -199,13 +201,27 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
                 </div>
+                <div className="w-[50%] sm:w-full">
+                  <button
+                    onClick={() => setOpros1(true)}
+                    className="font-bold text-[24px] mx-auto mt-[48px] 3xl:text-[20px]  bg-[#e53012] py-[13px] px-[24px]"
+                  >
+                    Следущей
+                  </button>
+                  <h1 className="text=[#fff] text-right text-[34px]  font-bold">
+                    1 / 10
+                  </h1>
+                </div>
               </div>
-              <hr className="my-[40px]" />
-              <div className="w-[100%]">
+              <div
+                className={`w-[100%]  ${opros1 ? "block" : "hidden"} ${
+                  opros2 && "hidden"
+                }`}
+              >
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                   Какую цель преследует ваше видео?
                 </h1>
-                <div className="flex items-center flex-wrap sm:w-full w-[80%] mt-[18px] ">
+                <div className="flex items-center flex-wrap sm:w-full w-[80%] ">
                   <div className="flex items-center">
                     <input
                       type="radio"
@@ -285,14 +301,29 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
                 </div>
+                <div className="w-[50%] sm:w-full">
+                  <button
+                    onClick={() => setOpros2(true)}
+                    className="font-bold text-[24px] mx-auto mt-[48px] 3xl:text-[20px]  bg-[#e53012] py-[13px] px-[24px]"
+                  >
+                    Следущей
+                  </button>
+                  <h1 className="text=[#fff] text-right text-[34px]  font-bold">
+                    2 / 10
+                  </h1>
+                </div>
               </div>
               <hr className="my-[40px]" />
 
-              <div className="w-[100%]">
+              <div
+                className={`w-[100%] ${opros2 ? "block" : "hidden"} ${
+                  opros3 && "hidden"
+                }`}
+              >
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                   Какой длительности должно быть видео?
                 </h1>
-                <div className="flex items-center flex-wrap w-[80%] mt-[18px] ">
+                <div className="flex items-center flex-wrap w-[80%] ">
                   <div className="flex items-center">
                     <input
                       type="radio"
@@ -380,14 +411,28 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
                 </div>
+                <div className="w-[50%] sm:w-full">
+                  <button
+                    onClick={() => setOpros3(true)}
+                    className="font-bold text-[24px] mx-auto mt-[48px] 3xl:text-[20px]  bg-[#e53012] py-[13px] px-[24px]"
+                  >
+                    Следущей
+                  </button>
+                  <h1 className="text=[#fff] text-right text-[34px]  font-bold">
+                    3 / 10
+                  </h1>
+                </div>
               </div>
-              <hr className="my-[40px]" />
 
-              <div className="w-[100%]">
+              <div
+                className={`w-[100%] ${opros3 ? "block" : "hidden"} ${
+                  opros4 && "hidden"
+                }`}
+              >
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                   На каком языке должно быть ваше видео?
                 </h1>
-                <div className="flex items-center flex-wrap w-[80%] mt-[18px] ">
+                <div className="flex items-center flex-wrap w-[80%] ">
                   <div className="flex items-center">
                     <input
                       type="radio"
@@ -464,15 +509,28 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
                 </div>
+                <div className="w-[50%] sm:w-full">
+                  <button
+                    onClick={() => setOpros4(true)}
+                    className="font-bold text-[24px] mx-auto mt-[48px] 3xl:text-[20px]  bg-[#e53012] py-[13px] px-[24px]"
+                  >
+                    Следущей
+                  </button>
+                  <h1 className="text=[#fff] text-right text-[34px]  font-bold">
+                    4 / 10
+                  </h1>
+                </div>
               </div>
 
-              <hr className="my-[40px]" />
-
-              <div className="w-[100%]">
+              <div
+                className={`w-[100%] ${opros4 ? "block" : "hidden"} ${
+                  opros5 && "hidden"
+                }`}
+              >
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                   Вам потребуется написание сценария или текста?
                 </h1>
-                <div className="flex items-center flex-wrap w-[80%] mt-[18px] ">
+                <div className="flex items-center flex-wrap w-[80%]">
                   <div className="flex items-center">
                     <input
                       type="radio"
@@ -543,15 +601,28 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
                 </div>
+                <div className="w-[50%] sm:w-full">
+                  <button
+                    onClick={() => setOpros5(true)}
+                    className="font-bold text-[24px] mx-auto mt-[48px] 3xl:text-[20px]  bg-[#e53012] py-[13px] px-[24px]"
+                  >
+                    Следущей
+                  </button>
+                  <h1 className="text=[#fff] text-right text-[34px]  font-bold">
+                    5 / 10
+                  </h1>
+                </div>
               </div>
 
-              <hr className="my-[40px]" />
-
-              <div className="w-[100%]">
+              <div
+                className={`w-[100%] ${opros5 ? "block" : "hidden"} ${
+                  opros6 && "hidden"
+                }`}
+              >
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                   Когда полностью должно быть готово видео?
                 </h1>
-                <div className="flex items-center flex-wrap w-[80%] mt-[18px] ">
+                <div className="flex items-center flex-wrap w-[80%] ">
                   <div className="flex items-center">
                     <input
                       type="radio"
@@ -617,15 +688,28 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
                 </div>
+                <div className="w-[50%] sm:w-full">
+                  <button
+                    onClick={() => setOpros6(true)}
+                    className="font-bold text-[24px] mx-auto mt-[48px] 3xl:text-[20px]  bg-[#e53012] py-[13px] px-[24px]"
+                  >
+                    Следущей
+                  </button>
+                  <h1 className="text=[#fff] text-right text-[34px]  font-bold">
+                    6 / 10
+                  </h1>
+                </div>
               </div>
 
-              <hr className="my-[40px]" />
-
-              <div className="w-[100%]">
+              <div
+                className={`w-[100%] ${opros6 ? "block" : "hidden"} ${
+                  opros7 && "hidden"
+                }`}
+              >
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                   Какая целевая аудитория вас интересует?
                 </h1>
-                <div className="flex items-center flex-wrap w-[80%] mt-[18px] ">
+                <div className="flex items-center flex-wrap w-[80%] ">
                   <div className="flex items-center">
                     <input
                       type="radio"
@@ -728,15 +812,28 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
                 </div>
+                <div className="w-[50%] sm:w-full">
+                  <button
+                    onClick={() => setOpros7(true)}
+                    className="font-bold text-[24px] mx-auto mt-[48px] 3xl:text-[20px]  bg-[#e53012] py-[13px] px-[24px]"
+                  >
+                    Следущей
+                  </button>
+                  <h1 className="text=[#fff] text-right text-[34px]  font-bold">
+                    7 / 10
+                  </h1>
+                </div>
               </div>
 
-              <hr className="my-[40px]" />
-
-              <div className="w-[100%]">
+              <div
+                className={`w-[100%] ${opros7 ? "block" : "hidden"} ${
+                  opros8 && "hidden"
+                }`}
+              >
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                   Кто или что является героем видео?
                 </h1>
-                <div className="flex items-center flex-wrap w-[80%] mt-[18px] ">
+                <div className="flex items-center flex-wrap w-[80%] ">
                   <div className="flex items-center">
                     <input
                       type="radio"
@@ -838,15 +935,28 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
                 </div>
+                <div className="w-[50%] sm:w-full">
+                  <button
+                    onClick={() => setOpros8(true)}
+                    className="font-bold text-[24px] mx-auto mt-[48px] 3xl:text-[20px]  bg-[#e53012] py-[13px] px-[24px]"
+                  >
+                    Следущей
+                  </button>
+                  <h1 className="text=[#fff] text-right text-[34px]  font-bold">
+                    8 / 10
+                  </h1>
+                </div>
               </div>
 
-              <hr className="my-[40px]" />
-
-              <div className="w-[100%]">
+              <div
+                className={`w-[100%] ${opros8 ? "block" : "hidden"} ${
+                  opros9 && "hidden"
+                }`}
+              >
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                   Какой примерный бюджет вашего видео?
                 </h1>
-                <div className="flex items-center flex-wrap w-[80%] mt-[18px] ">
+                <div className="flex items-center flex-wrap w-[80%] ">
                   <div className="flex items-center">
                     <input
                       type="radio"
@@ -948,8 +1058,22 @@ export const OprosComponent: React.FC = () => {
                     </label>
                   </div>
                 </div>
+                <div className="w-[50%] sm:w-full">
+                  <button
+                    onClick={() => setOpros9(true)}
+                    className="font-bold text-[24px] mx-auto mt-[48px] 3xl:text-[20px]  bg-[#e53012] py-[13px] px-[24px]"
+                  >
+                    Следущей
+                  </button>
+                  <h1 className="text=[#fff] text-right text-[34px]  font-bold">
+                    9 / 10
+                  </h1>
+                </div>
               </div>
-              <div className="mt-[84px] sm:w-full w-[80%]">
+
+              <div
+                className={` ${opros9 ? "block" : "hidden"} sm:w-full w-[80%]`}
+              >
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                   Спасибо за ответы, заполните форму обратной связи —
                 </h1>
