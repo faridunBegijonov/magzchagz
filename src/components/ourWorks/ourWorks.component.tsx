@@ -29,6 +29,10 @@ import img25 from "../../assets/project/kris.png";
 import img26 from "../../assets/project/hair.png";
 import img27 from "../../assets/project/bisot.jpg";
 import img30 from "../../assets/project/siyomanon2.png";
+import img31 from "../../assets/project/xavas.jpg";
+import img32 from "../../assets/project/8mart.jpg";
+import img33 from "../../assets/project/gr33.jpg";
+import img34 from "../../assets/project/kok.jpg";
 
 export const ourWorksModel: ItemVideoType[] = [
   {
@@ -138,6 +142,27 @@ export const ourWorksModel: ItemVideoType[] = [
   },
 
   {
+    img: img34,
+    srcVideo: "https://www.youtube.com/embed/XYgXGg9zmWw",
+    title: "Сухарики KOK",
+    type: "Рекламный ролик",
+  },
+
+  {
+    img: img32,
+    srcVideo: "https://www.youtube.com/embed/fAqimZRCHrs",
+    title: "МегаФон Таджикистан - Мама",
+    type: "Рекламный ролик",
+  },
+
+  {
+    img: img31,
+    srcVideo: "https://www.youtube.com/embed/Gr0IEJEbWGY",
+    title: "Семечки - Хавас",
+    type: "Рекламный ролик",
+  },
+
+  {
     img: img11,
     srcVideo: "https://www.youtube.com/embed/gJOXZNurG2I",
     title: "FoodFest Dushanbe - Highlights 2017",
@@ -195,6 +220,12 @@ export const ourWorksModel: ItemVideoType[] = [
     img: img27,
     srcVideo: "https://www.youtube.com/embed/mwVsyIzAy0I",
     title: 'Мебельная фабрика "Бисот" TVC',
+    type: "Рекламный ролик",
+  },
+  {
+    img: img33,
+    srcVideo: "https://www.youtube.com/embed/0xLwB_ypn1Y",
+    title: "Пример Инфографики | magzchagz",
     type: "Рекламный ролик",
   },
 ];
