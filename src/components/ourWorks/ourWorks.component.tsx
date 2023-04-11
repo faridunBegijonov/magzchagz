@@ -181,6 +181,19 @@ export const ourWorksModel: ItemVideoType[] = [
     type: "Рекламный ролик",
   },
   {
+    img: img25,
+    srcVideo: "https://www.youtube.com/embed/3fKKlPTYWzI",
+    title: "Таджик Кристалл TVC",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img26,
+    srcVideo: "https://www.youtube.com/embed/4XsQS-ZOAEA",
+    title: "Haier TVC",
+    type: "Рекламный ролик",
+  },
+
+  {
     img: img13,
     srcVideo: "https://www.youtube.com/embed/sOhytVV4duI",
     title: "Интернет-магазин Gelos - TVC",
@@ -204,18 +217,7 @@ export const ourWorksModel: ItemVideoType[] = [
     title: "Алиф Банк TVC",
     type: "Рекламный ролик",
   },
-  {
-    img: img25,
-    srcVideo: "https://www.youtube.com/embed/3fKKlPTYWzI",
-    title: "Таджик Кристалл TVC",
-    type: "Рекламный ролик",
-  },
-  {
-    img: img26,
-    srcVideo: "https://www.youtube.com/embed/4XsQS-ZOAEA",
-    title: "Haier TVC",
-    type: "Рекламный ролик",
-  },
+
   {
     img: img27,
     srcVideo: "https://www.youtube.com/embed/mwVsyIzAy0I",
