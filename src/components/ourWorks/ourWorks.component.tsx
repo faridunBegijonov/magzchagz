@@ -22,6 +22,13 @@ import img18 from "../../assets/project/siyoma.jpg";
 import img19 from "../../assets/project/siyoma2.jpg";
 import img20 from "../../assets/project/marcoPoloImg.jpg";
 import img21 from "../../assets/project/OLYMPICImg.jpg";
+import img22 from "../../assets/project/ё1ё11ёё1.jpg";
+import img23 from "../../assets/project/pri.jpg";
+import img24 from "../../assets/project/alifTvc.jpg";
+import img25 from "../../assets/project/kris.png";
+import img26 from "../../assets/project/hair.png";
+import img27 from "../../assets/project/bisot.jpg";
+import img30 from "../../assets/project/siyomanon2.png";
 
 export const ourWorksModel: ItemVideoType[] = [
   {
@@ -69,6 +76,12 @@ export const ourWorksModel: ItemVideoType[] = [
     type: "Рекламный ролик",
   },
   {
+    img: img30,
+    srcVideo: "https://www.youtube.com/embed/ycAOWOz-dz0",
+    title: "Siyoma Water - Feel the Nature",
+    type: "Рекламный ролик",
+  },
+  {
     img: img14,
     srcVideo: "https://www.youtube.com/embed/a3O8rKqOpoY",
     title: "RakshRace - Highlights 2022",
@@ -93,15 +106,9 @@ export const ourWorksModel: ItemVideoType[] = [
     type: "Рекламный ролик",
   },
   {
-    img: img5,
+    img: img19,
     srcVideo: "https://www.youtube.com/embed/0Jw7aRfiNGg",
     title: "Paykar - Ramazan",
-    type: "Рекламный ролик",
-  },
-  {
-    img: img19,
-    srcVideo: "https://www.youtube.com/embed/ycAOWOz-dz0",
-    title: "Siyoma Water - Feel the Nature",
     type: "Рекламный ролик",
   },
   {
@@ -152,6 +159,42 @@ export const ourWorksModel: ItemVideoType[] = [
     img: img13,
     srcVideo: "https://www.youtube.com/embed/sOhytVV4duI",
     title: "Интернет-магазин Gelos - TVC",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img22,
+    srcVideo: "https://www.youtube.com/embed/g43wpOiMuO0",
+    title: "СПОРТКОМПЛЕКС X-FIT",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img23,
+    srcVideo: "https://www.youtube.com/embed/KgQncQgvu0k",
+    title: "TFF SPORTWEAR TVC",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img24,
+    srcVideo: "https://www.youtube.com/embed/RFE_AEE17Ss",
+    title: "Алиф Банк TVC",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img25,
+    srcVideo: "https://www.youtube.com/embed/3fKKlPTYWzI",
+    title: "Таджик Кристалл TVC",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img26,
+    srcVideo: "https://www.youtube.com/embed/4XsQS-ZOAEA",
+    title: "Haier TVC",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img27,
+    srcVideo: "https://www.youtube.com/embed/mwVsyIzAy0I",
+    title: 'Мебельная фабрика "Бисот" TVC',
     type: "Рекламный ролик",
   },
 ];

@@ -13,7 +13,7 @@ export const ContactComponent: React.FC = () => {
             Таджикистан г. Душанбе
           </h1>
           <p className="xl:text-[28px] sm:text-[24px] text-[38px]">
-            Sooroosh Hall
+            Bokhtar Business Centr
           </p>
           <div className="flex items-center justify-between sm:h-[400px] justify-start items-start sm:flex-col w-[100%] flex-wrap mt-[38px]">
             <a

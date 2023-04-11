@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import video from "../../assets/banner/Siyoma Rose drink water TVC.mp4";
 import img from "../../assets/opros/quiz.png";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import axios from "axios";
 
 export const OprosComponent: React.FC = () => {
   const [start, setStart] = useState(false);
@@ -64,22 +65,17 @@ export const OprosComponent: React.FC = () => {
     setMoney(event.target.value);
   };
 
-  const sendMassage = () => {
+  const sendMassage = async () => {
     if (nameAvtor && phoneAvtor) {
-      const message = {
-        "Какая тематика съёмки вам подходит": tematika,
-        "Какую цель преследует ваше видео": cell,
-        "Какой длительности должно быть видео": delay,
-        "На каком языке должно быть ваше видео": lang,
-        "Вам потребуется написание сценария или текста": scenari,
-        "Когда полностью должно быть готово видео": kogda,
-        "Какая целевая аудитория вас интересует": auditori,
-        "Кто или что является героем видео": geroy,
-        "Какой примерный бюджет вашего видео": money,
-        Имя: nameAvtor,
-        Телефон: phoneAvtor,
-      };
-      console.log(JSON.stringify(message, null, "\t"));
+      const sendMessage = ` 
+        <b>1.Какая тематика съёмки вам подходит: \n <i>-${tematika}</i></b>\n<b>2.Какую цель преследует ваше видео: \n <i>-${cell}</i></b>\n<b>3.Какой длительности должно быть видео: \n <i>-${delay}</i></b>\n<b>4.На каком языке должно быть ваше видео: \n <i>-${lang}</i></b>\n<b>5.Вам потребуется написание сценария или текста: \n <i>-${scenari}</i></b>\n<b>6.Когда полностью должно быть готово видео: \n <i>-${kogda}</i></b>\n<b>7.Какая целевая аудитория вас интересует: \n <i>-${auditori}</i></b>\n<b>8.Кто или что является героем видео: \n <i>-${geroy}</i></b>\n<b>9.Какой примерный бюджет вашего видео: \n <i>-${money}</i></b>\n<b>Имя: \n <i>${nameAvtor}</i></b>\n<b>Телефон: \n <i>${phoneAvtor}</i></b>\n
+      `;
+
+      await axios.post(
+        `https://api.telegram.org/bot6207855241:AAFnEsbBrV_-1NRP6V8RhKzG3aw8vc8TqQs/sendMessage?chat_id=-879629505&text=${encodeURIComponent(
+          sendMessage
+        )}&parse_mode=html`
+      );
       setNameAvtor("");
       setPhoneAvtor("");
       setSendBtn(true);
@@ -93,9 +89,9 @@ export const OprosComponent: React.FC = () => {
   };
   return (
     <>
-      <div id="price" className={`bgApros h-[screen] relative`}>
+      <div id="price" className="h-[screen] relative">
         <div
-          className={`s:px-[20px] s:py-[25px] sm:h-auto  w-[100%] h-screen bgBanner xl:px-[50px] py-[45px]  px-[80px] flex items-start justify-center
+          className={`s:px-[20px] s:py-[25px] sm:h-auto  w-[100%] h-screen xl:px-[50px] py-[45px]  px-[80px] flex items-start justify-center
            flex-col`}
         >
           {start ? (
@@ -452,31 +448,31 @@ export const OprosComponent: React.FC = () => {
                   <div className="flex items-center">
                     <input
                       type="radio"
-                      id="Английский"
-                      name="Английский"
-                      value="Английский"
-                      checked={lang === "Английский"}
+                      id="Таджикский"
+                      name="Таджикский"
+                      value="Таджикский"
+                      checked={lang === "Таджикский"}
                       onChange={handleChangeLang}
                     />
-                    <label className="text-[#fff]" htmlFor="Английский">
-                      Английский
+                    <label className="text-[#fff]" htmlFor="Таджикский">
+                      Таджикский
                     </label>
                   </div>
 
                   <div className="flex items-center">
                     <input
                       type="radio"
-                      id="Русский и английский"
-                      name="Русский и английский"
-                      value="Русский и английский"
-                      checked={lang === "Русский и английский"}
+                      id="Русский и Таджикский"
+                      name="Русский и Таджикский"
+                      value="Русский и Таджикский"
+                      checked={lang === "Русский и Таджикский"}
                       onChange={handleChangeLang}
                     />
                     <label
                       className="text-[#fff]"
-                      htmlFor="Русский и английский"
+                      htmlFor="Русский и Таджикский"
                     >
-                      Русский и английский
+                      Русский и Таджикский
                     </label>
                   </div>
 
@@ -968,10 +964,7 @@ export const OprosComponent: React.FC = () => {
                       checked={money === "Около 3000смн"}
                       onChange={handleChangeMoney}
                     />
-                    <label
-                      className="text-[#fff]"
-                      htmlFor="Около 50 тысяч рублей"
-                    >
+                    <label className="text-[#fff]" htmlFor="Около 3000смн">
                       Около 3000смн
                     </label>
                   </div>
@@ -979,28 +972,14 @@ export const OprosComponent: React.FC = () => {
                   <div className="flex items-center">
                     <input
                       type="radio"
-                      id="3000смн - 7000смн"
-                      name="3000смн - 7000смн"
-                      value="3000смн - 7000смн"
-                      checked={money === "3000смн - 7000смн"}
+                      id="5000смн - 7000смн"
+                      name="5000смн - 7000смн"
+                      value="5000смн - 7000смн"
+                      checked={money === "5000смн - 7000смн"}
                       onChange={handleChangeMoney}
                     />
-                    <label className="text-[#fff]" htmlFor="3000смн - 7000смн">
-                      3000смн - 7000смн
-                    </label>
-                  </div>
-
-                  <div className="flex items-center">
-                    <input
-                      type="radio"
-                      id="7000смн - 10000смн"
-                      name="7000смн - 10000смн"
-                      value="7000смн - 10000смн"
-                      checked={money === "7000смн - 10000смн"}
-                      onChange={handleChangeMoney}
-                    />
-                    <label className="text-[#fff]" htmlFor="7000смн - 10000смн">
-                      7000смн - 10000смн
+                    <label className="text-[#fff]" htmlFor="5000смн - 7000смн">
+                      5000смн - 7000смн
                     </label>
                   </div>
 
@@ -1018,6 +997,23 @@ export const OprosComponent: React.FC = () => {
                       htmlFor="10000смн - 15000смн"
                     >
                       10000смн - 15000смн
+                    </label>
+                  </div>
+
+                  <div className="flex items-center">
+                    <input
+                      type="radio"
+                      id="15000смн - 20000смн"
+                      name="15000смн - 20000смн"
+                      value="15000смн - 20000смн"
+                      checked={money === "15000смн - 20000смн"}
+                      onChange={handleChangeMoney}
+                    />
+                    <label
+                      className="text-[#fff]"
+                      htmlFor="15000смн - 20000смн"
+                    >
+                      15000смн - 20000смн
                     </label>
                   </div>
 
