@@ -129,7 +129,7 @@ input[type="radio"]:checked + label {
 }
 
 .videoB {
-  transform: scale(2.7);
+  transform: scale(1);
 }
 
 .bgBanner {
@@ -179,5 +179,9 @@ input[type="radio"]:checked + label {
   label {
     font-size: 20px;
     margin-right: 0;
+  }
+
+  .videoB {
+    transform: scale(1.5);
   }
 }
