@@ -1105,7 +1105,7 @@ export const OprosComponent: React.FC = () => {
                   <span className="jobT text-[#222] bg-[#FFC600FF] px-[18px] font-bold py-1">
                     скидку 10%
                   </span>{" "}
-                  + 3 варианта сметы по стоимости вашего видео в течение дня
+                  + варианта сметы по стоимости вашего видео в течение дня
                 </p>
               </div>
               <button

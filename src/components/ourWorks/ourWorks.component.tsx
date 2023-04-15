@@ -33,6 +33,7 @@ import img31 from "../../assets/project/xavas.jpg";
 import img32 from "../../assets/project/8mart.jpg";
 import img33 from "../../assets/project/gr33.jpg";
 import img34 from "../../assets/project/kok.jpg";
+import img35 from "./image_2023-04-15_12-47-55.png";
 
 export const ourWorksModel: ItemVideoType[] = [
   {
@@ -62,8 +63,8 @@ export const ourWorksModel: ItemVideoType[] = [
 
   {
     img: img1,
-    srcVideo: "https://www.youtube.com/embed/rXVsCDrMzjc",
-    title: "Pierre Cardin Cometics Teaser",
+    srcVideo: "https://www.youtube.com/embed/9WT5_8OsVoc",
+    title: "Pierre Cardin - Cosmetics",
     type: "Fashion Film",
   },
   {
@@ -90,6 +91,12 @@ export const ourWorksModel: ItemVideoType[] = [
     srcVideo: "https://www.youtube.com/embed/a3O8rKqOpoY",
     title: "RakshRace - Highlights 2022",
     type: "Event",
+  },
+  {
+    img: img35,
+    srcVideo: "https://www.youtube.com/embed/rXVsCDrMzjc",
+    title: "Pierre Cardin - Pallete",
+    type: "Fashion Film",
   },
   {
     img: img3,
