@@ -241,22 +241,22 @@ export const ourWorksModel: ItemVideoType[] = [
 
 const ourWorksModel2: ItemVideoType[] = [
   {
-    img: img1,
-    srcVideo: "https://www.youtube.com/embed/rXVsCDrMzjc",
-    title: "Pierre Cardin Cometics Teaser",
-    type: "Fashion Film",
-  },
-  {
-    img: img2,
-    srcVideo: "https://www.youtube.com/embed/Hs6wKpa6OGg",
-    title: "Documentary - Health",
-    type: "Документальный фильм",
-  },
-  {
-    img: img3,
-    srcVideo: "https://www.youtube.com/embed/kzcxVlmvMHQ",
-    title: "Siyoma - KVASS TVC",
+    img: img15,
+    srcVideo: "https://www.youtube.com/embed/5Qifle_g3j8",
+    title: "Lindavit - TVC",
     type: "Рекламный ролик",
+  },
+  {
+    img: img8,
+    srcVideo: "https://www.youtube.com/embed/mybhln-X6fA",
+    title: "Navrooz - Shot on Galaxy S23 Ultra",
+    type: "Рекламный ролик",
+  },
+  {
+    img: img7,
+    srcVideo: "https://www.youtube.com/embed/VijeT2_X5_s",
+    title: "Tamaddoon - ZHIWJ",
+    type: "Fashion Film",
   },
   {
     img: img4,
