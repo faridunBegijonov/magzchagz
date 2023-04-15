@@ -8,12 +8,12 @@ export const SidebarComponent: FC = () => {
         <a href="#home">
           <img src={logo} className="w-[113px] h-[113px]" alt="Logo" />
         </a>
-        <div className="flex flex-col items-center justify-between xl:h-[180px] h-[280px] mt-[8px] ">
+        <div className="flex flex-col items-center justify-between xl:h-[180px] h-[220px] mt-[8px] ">
           {linksModel.map((links) => (
             <a
               key={links.title}
               href={links.href}
-              className="hover:text-[#8DA399] transition-colors"
+              className="hover:text-[#8DA399] text-sm transition-colors"
             >
               {links.title}
             </a>
