@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import video from "./111_TxXjOLwj.mp4";
+import video from "./111.mp4";
 import pdfImg from "../../../assets/banner/pdf.svg";
 import { SidebarComponentBanner } from "./sidebar.component";
 import MenuIcon from "@mui/icons-material/Menu";

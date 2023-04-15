@@ -160,6 +160,12 @@ input[type="radio"]:checked + label {
   opacity: 1;
 }
 
+@media (max-width: 3500px) {
+  .videoB {
+    transform: scaleX(1.1);
+  }
+}
+
 @media (max-width: 1700px) {
   .gridProject {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -168,6 +174,8 @@ input[type="radio"]:checked + label {
   label {
     font-size: 20px;
   }
+
+
 }
 
 @media (max-width: 1300px) {
