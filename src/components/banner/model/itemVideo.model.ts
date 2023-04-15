@@ -6,7 +6,7 @@ import imgPlo from "./image_2023-04-15_05-04-19.png";
 export const itemVideoModel: ItemVideoType[] = [
   {
     title: "Шоурил",
-    srcVideo: "https://www.youtube.com/embed/8TG6FepUfpk",
+    srcVideo: "https://www.youtube.com/embed/c1xAOQ7ElH4",
     img: imgShouril,
   },
   {
