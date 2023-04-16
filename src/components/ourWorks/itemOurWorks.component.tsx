@@ -42,7 +42,7 @@ export const ItemOurWorksComponent: React.FC<ItemVideoType> = ({
             >
               +
             </div>
-            <div className="sm:w-[90%] sm:h-[30%] w-[50%] h-[50%]">
+            <div className="sm:w-[90%] w-[50%] h-[50%]">
               <iframe
                 width="100%"
                 height="100%"
