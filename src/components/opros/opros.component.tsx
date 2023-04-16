@@ -123,51 +123,45 @@ export const OprosComponent: React.FC = () => {
                   <div className="flex items-center">
                     <input
                       type="radio"
-                      id="Рекламный ролик (промо)"
-                      name="Рекламный ролик (промо)"
-                      value="Рекламный ролик (промо)"
-                      checked={tematika === "Рекламный ролик (промо)"}
+                      id="Рекламный ролик"
+                      name="Рекламный ролик"
+                      value="Рекламный ролик"
+                      checked={tematika === "Рекламный ролик"}
                       onChange={handleChange}
                     />
-                    <label
-                      className="text-[#fff]"
-                      htmlFor="Рекламный ролик (промо)"
-                    >
-                      Рекламный ролик (промо)
+                    <label className="text-[#fff]" htmlFor="Рекламный ролик">
+                      Рекламный ролик
                     </label>
                   </div>
 
                   <div className="flex items-center">
                     <input
                       type="radio"
-                      id="Освещение мероприятий"
-                      name="Освещение мероприятий"
-                      value="Освещение мероприятий"
-                      checked={tematika === "Освещение мероприятий"}
+                      id="Анимационный ролик"
+                      name="Анимационный ролик"
+                      value="Анимационный ролик"
+                      checked={tematika === "Анимационный ролик"}
                       onChange={handleChange}
                     />
-                    <label
-                      className="text-[#fff]"
-                      htmlFor="Освещение мероприятий"
-                    >
-                      Освещение мероприятий
+                    <label className="text-[#fff]" htmlFor="Анимационный ролик">
+                      Анимационный ролик
                     </label>
                   </div>
 
                   <div className="flex items-center">
                     <input
                       type="radio"
-                      id="Корпоративный ролик"
-                      name="Корпоративный ролик"
-                      value="Корпоративный ролик"
-                      checked={tematika === "Корпоративный ролик"}
+                      id="Документальный фильм"
+                      name="Документальный фильм"
+                      value="Документальный фильм"
+                      checked={tematika === "Документальный фильм"}
                       onChange={handleChange}
                     />
                     <label
                       className="text-[#fff]"
-                      htmlFor="Корпоративный ролик"
+                      htmlFor="Документальный фильм"
                     >
-                      Корпоративный ролик
+                      Документальный фильм
                     </label>
                   </div>
 
