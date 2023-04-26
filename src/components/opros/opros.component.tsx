@@ -948,6 +948,7 @@ export const OprosComponent: React.FC = () => {
                 <h1 className="sm:text-[24px] lg:w-[100%] xl:text-[40px] xl:w-[850px] 3xl:text-[50px] text-[70px] leading-snug	 text-[#fff] font-[900] w-[950px]">
                   Какой примерный бюджет вашего видео?
                 </h1>
+
                 <div className="flex items-center flex-wrap w-[80%] ">
                   <div className="flex items-center">
                     <input
